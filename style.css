@@ -1,0 +1,120 @@
+ @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgb(80, 80, 181), white);
+}
+.main h1{
+    color: red;
+    font-family:Agbalumo;
+    text-decoration:underline;
+}
+.information{
+    display: flex;
+    width: 60%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.information input{
+    width: 100%;
+    height: 20px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.add-button{
+    padding: 0.5rem;
+    width: 60%;
+    border-radius: 0.2rem;
+    background-color: brown;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    
+    gap: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(#465c66, white);
+  box-shadow: 0 0 10px rgb(200, 174, 223);
+  color: midnightblue;
+  font-weight: bold;
+}
+.name{
+    text-transform: capitalize;
+}
+.country-container{
+    text-transform: uppercase;
+}
+.item:first-child{
+    background: linear-gradient(goldenrod, white);
+    color: #664d2b;
+}
+.item:nth-child(2){
+    background: linear-gradient(silver, white);
+    color:darkmagenta;
+}
+.item:nth-child(3){
+    
+    background: linear-gradient(#664d2b, white);
+    color: dimgrey;
+}
+.item img{
+    width: 1rem;
+}
+
+.time{
+    font-size: 0.8rem;
+}
+.button-container button{
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: #9a2222;
+    padding: 0.2rem;
+    border-style: none;
+    cursor: pointer;
+    margin: 0 0.2rem;
+}
+.errorbox{
+    color: rgb(225, 136, 136);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .information, .scoreboard{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .information,.scoreboard{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
